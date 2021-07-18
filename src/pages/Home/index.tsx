@@ -41,7 +41,7 @@ export function Home() {
             </aside>
             <main>
                 <div className="main-content">
-                    <img src={mainImg} alt="Illustration showing questions and answers" />
+                    <img src={mainImg} alt="main image showing girl with her shopping cart" />
                     <button type="button" onClick={handleRedirectToRegister}>Let's check it out!</button>
                 </div>
             </main>

@@ -7,8 +7,9 @@ export function Header() {
         <Content>
             <img src={logoImg} alt="Hiring Challange" />
             <div>
-            <HeaderButton title="Register" redirect="/register" />
-            <HeaderButton title="Offers" redirect="/offers" />
+                <HeaderButton title="Home" redirect="/" />
+                <HeaderButton title="Register" redirect="/register" />
+                <HeaderButton title="Offers" redirect="/offers" />
             </div>
         </Content>
     );

@@ -37,7 +37,7 @@ export function Register() {
           setMinutes(Math.floor(difference/1000/60) % 60)
           setHours(Math.floor(difference/1000/60/60) % 24)
           setDays(Math.floor(difference/1000/60/60/24))
-        },[], //currentTime
+        },[currentTime], 
       );
 
     return (
