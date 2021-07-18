@@ -62,7 +62,12 @@ export function Register() {
                         <button type="submit" onClick={handleSendUserToLocalStorage}>
                             Subscribe our newsletter
                         </button>
-                        <h1>{seconds}</h1>
+                        <div>
+                            <p>{days} Dias</p>
+                            <p>{hours} Horas</p>
+                            <p>{minutes} Minutos</p>
+                            <p>{seconds} Segundos</p>
+                        </div>
                     </form>
                 </div>
             </main>
