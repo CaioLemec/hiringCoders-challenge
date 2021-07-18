@@ -8,7 +8,6 @@ export const Container = styled.main `
     margin: 0 auto;
     box-shadow: 10px 10px 8px #888888;
 
-
     aside {
         flex: 1;
         background: var(--primary-red);
