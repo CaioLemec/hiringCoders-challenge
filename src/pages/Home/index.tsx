@@ -1,4 +1,4 @@
-import mainImg from '../../assets/images/main.svg';
+import mainPic from '../../assets/images/main.svg';
 import Typewriter from 'typewriter-effect';
 import { Container } from './styles';
 import { useHistory } from 'react-router-dom';
@@ -41,7 +41,7 @@ export function Home() {
                 </aside>
                 <main>
                     <div className="main-content">
-                        <img src={mainImg} alt="main image showing girl with her shopping cart" />
+                        <img src={mainPic} alt="showing girl with her shopping cart" />
                         <button type="button" onClick={handleRedirectToRegister}>Let's check it out!</button>
                     </div>
                 </main>

@@ -12,12 +12,8 @@ export function HeaderButton(props: HeaderButtonProps) {
         history.push(`${props.redirect}`)
     }
 
-
     return (
         <button type="button" onClick={handleRedirectToRegister}>{props.title}</button>
     );
 }
 
-function useRouter(): { location: any; } {
-    throw new Error('Function not implemented.');
-}
