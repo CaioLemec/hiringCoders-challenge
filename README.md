@@ -53,7 +53,7 @@ In this application it was possible to deepen knowledge in front-end development
 ## :nail_care: Layout
 <p align="center">
 <img src="./public/layout.gif" width="100%"/>
-<h3 align="center">You can also check <a href="https://hiring-coders-challenge.vercel.app">Deploy</a>.</h3>
+<h3 align="center">You can also check <a href="https://hiring-coders-challenge.vercel.app">Deploy (Responsive version is under construction)</a>.</h3>
 <br>
 <hr>
 
