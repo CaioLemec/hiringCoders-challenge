@@ -26,6 +26,50 @@ export const Container = styled.main `
             z-index: -1;
         }
     }
+        .counter {
+            width: 100%;
+            max-width: 800px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            height: 15%;
+            top: 10rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            background: var(--negative-primary);
+
+            border-radius: 0.5rem;
+
+            > div {
+                display: flex;
+                margin: 0 auto;
+                flex-direction: column;
+                flex: 1;
+                overflow-y: hidden;
+                justify-content: center;
+                align-items: center;
+                backdrop-filter: blur(5px);
+
+                &:hover {
+                    transform: scale(0.95);
+                }
+
+                p {
+                    font-size: 1.5rem;
+                    display: inline;
+                    color: var(--background);
+                }
+                
+                span {
+                    font-size: 1.5rem;
+                    margin-top: 1rem;
+                    display: inline;
+                    color: var(--background);
+                }
+            }
+        }
 
         main {
             flex: 1;
@@ -43,12 +87,14 @@ export const Container = styled.main `
         max-width: 320px;
         align-items: stretch;
         text-align: center;
-
-        > img {
-            align-self: center;
-        }
+        margin-top: 10rem;
 
         form {
+            h3 {
+                margin-bottom: 0.5rem;
+                color: var(--primary-red);
+            }
+
             input {
                 height: 3rem;
                 border-radius: 8px;
@@ -92,20 +138,23 @@ export const Container = styled.main `
                     transform: scale(0.9);
                 }
             }
-
-            div {
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                p {
-                    margin-left: 1rem;
-                    font-size: 1rem;
-                    line-height: 3rem;
-                }
-            }
         }
+
+        div {
+                max-width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 2rem;
+                
+                > a {
+                    padding: 0 2rem;
+                    background: none;
+                    color: var(--primary-red);
+                    border: 0;
+
+                }
+                
+            }
     }    
 `;
 
