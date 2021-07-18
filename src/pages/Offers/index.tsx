@@ -7,13 +7,13 @@ import { Container } from './styles';
 export function Offers() {
     return (
         <>
-        <Header />
-        <Container>
-            <main>
-                <Carousel />
-            </main>
-        </Container>
-        <Footer />
+            <Header />
+            <Container>
+                <main>
+                    <Carousel />
+                </main>
+            </Container>
+            <Footer />
         </>
     );
 }

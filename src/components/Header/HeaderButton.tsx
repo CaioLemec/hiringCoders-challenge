@@ -1,4 +1,4 @@
-import { useHistory, matchPath, useRouteMatch } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 interface HeaderButtonProps {
     title: string;
@@ -8,7 +8,7 @@ interface HeaderButtonProps {
 export function HeaderButton(props: HeaderButtonProps) {
     const history = useHistory();
 
-    function handleRedirectToRegister () {
+    function handleRedirectToRegister() {
         history.push(`${props.redirect}`)
     }
 

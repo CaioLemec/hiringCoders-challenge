@@ -8,45 +8,45 @@ import { Footer } from '../../components/Footer';
 export function Home() {
     const history = useHistory();
 
-    function handleRedirectToRegister () {
+    function handleRedirectToRegister() {
         history.push('/register');
     }
 
     return (
         <>
-        <Header />
-        <Container>
-            <aside>
-                <strong>Black Friday</strong>
-                <p>Are you ready for incredible 
-                    <Typewriter
-                        onInit={(typewriter) => {
-                            typewriter.typeString("discounts?")
-                            .pauseFor(2000)
-                            .deleteAll()
-                            typewriter.typeString("savings?")
-                            .pauseFor(2000)
-                            .deleteAll()
-                            typewriter.typeString("offers?")
-                            .pauseFor(2000)
-                            .deleteAll()
-                            .start();
-                        }}
-                        options={{
-                            autoStart: true,
-                            loop: true,
-                        }}
-                    />
-                </p>
-            </aside>
-            <main>
-                <div className="main-content">
-                    <img src={mainImg} alt="main image showing girl with her shopping cart" />
-                    <button type="button" onClick={handleRedirectToRegister}>Let's check it out!</button>
-                </div>
-            </main>
-        </Container>
-        <Footer />
+            <Header />
+            <Container>
+                <aside>
+                    <strong>Black Friday</strong>
+                    <p>Are you ready for incredible
+                        <Typewriter
+                            onInit={(typewriter) => {
+                                typewriter.typeString("discounts?")
+                                    .pauseFor(2000)
+                                    .deleteAll()
+                                typewriter.typeString("savings?")
+                                    .pauseFor(2000)
+                                    .deleteAll()
+                                typewriter.typeString("offers?")
+                                    .pauseFor(2000)
+                                    .deleteAll()
+                                    .start();
+                            }}
+                            options={{
+                                autoStart: true,
+                                loop: true,
+                            }}
+                        />
+                    </p>
+                </aside>
+                <main>
+                    <div className="main-content">
+                        <img src={mainImg} alt="main image showing girl with her shopping cart" />
+                        <button type="button" onClick={handleRedirectToRegister}>Let's check it out!</button>
+                    </div>
+                </main>
+            </Container>
+            <Footer />
         </>
     );
 }
