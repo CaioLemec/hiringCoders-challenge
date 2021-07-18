@@ -84,15 +84,28 @@ export const Container = styled.main `
             border: 0;
             transition: 0.2s;
 
-            &:hover {
-                filter: brightness(0.9);
+                &:hover {
+                    filter: brightness(0.9);
+                }
+
+                &:active {
+                    transform: scale(0.9);
+                }
             }
 
-            &:active {
-                transform: scale(0.9);
+            div {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                p {
+                    margin-left: 1rem;
+                    font-size: 1rem;
+                    line-height: 3rem;
+                }
             }
         }
-    }
-}    
+    }    
 `;
 
