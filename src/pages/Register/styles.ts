@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.main `
-    max-width: 1480px;
+export const Container = styled.main`
     display: flex;
     align-items: stretch;
     height: 100vh;

@@ -4,7 +4,6 @@ export const GlobalStyle = createGlobalStyle`
     :root {
         --background: #F2F0F5;
         --primary-red: #F50057;
-        --primary-purple: #835AFD;
         --negative-primary: #1D1D1F;
     }
 
@@ -22,8 +21,6 @@ export const GlobalStyle = createGlobalStyle`
         @media (max-width: 720px) {
             font-size: 87.5%; // 14px
         }
-
-        scroll-behavior: smooth;
     }
 
     body {
@@ -43,9 +40,4 @@ export const GlobalStyle = createGlobalStyle`
     button {
         cursor: pointer;
     }
-
-    [disabled] {
-        opacity: 0.6;
-        cursor: not-allowed;
-        }
 `

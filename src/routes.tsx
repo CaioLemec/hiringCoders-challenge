@@ -4,15 +4,14 @@ import { Offers } from './pages/Offers';
 import { Register } from './pages/Register';
 import { GlobalStyle } from "./styles/global";
 
-
 export function Routes() {
   return (
     <BrowserRouter>
-    <GlobalStyle />
+      <GlobalStyle />
       <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/register" exact component={Register} />
-          <Route path="/offers" exact component={Offers} />
+        <Route path="/" exact component={Home} />
+        <Route path="/register" exact component={Register} />
+        <Route path="/offers" exact component={Offers} />
       </Switch>
     </BrowserRouter>
   );
