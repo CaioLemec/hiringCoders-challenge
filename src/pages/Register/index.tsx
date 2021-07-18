@@ -50,19 +50,19 @@ export function Register() {
             <div className="counter">
                 <div>
                     <p>Days:</p>
-                    <span>{days}</span>
+                    <span>{days === 0 ? 'Loading...' : days}</span>
                 </div>
                 <div>
                     <p>Hours:</p>
-                    <span>{hours}</span>
+                    <span>{hours === 0 ? 'Loading...' : hours}</span>
                 </div>
                 <div>
                     <p>Minutes:</p>
-                    <span>{minutes}</span>
+                    <span>{minutes === 0 ? 'Loading...' : minutes}</span>
                 </div>
                 <div>
                     <p>Seconds:</p>
-                    <span>{seconds}</span>
+                    <span>{seconds === 0 ? 'Loading...' : seconds}</span>
                 </div>
             </div>
             <main>
@@ -92,3 +92,5 @@ export function Register() {
         </>
     );
 }
+
+// Arrumar o NaN do useEffect
