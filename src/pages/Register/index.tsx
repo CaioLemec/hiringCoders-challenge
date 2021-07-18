@@ -15,6 +15,7 @@ export function Register() {
     const [seconds, setSeconds] = useState(0);
     const [difference, setDifference] = useState(0);
     const [currentTime, setCurrentTime] = useState<any>();
+    const [blackFridayTime, setBlackFridayTime] = useState<any>();
     const [userEmail, setUserEmail] = useState('');
 
     function handleSendUserToLocalStorage() {
@@ -26,18 +27,17 @@ export function Register() {
         }
     }
 
-    const blackFridayTime: any = new Date(`November 26 2021 00:00:00`)
-
     useEffect(() => {
         setInterval(() => {
             setCurrentTime(new Date())
+            setBlackFridayTime(new Date(`November 26 2021 00:00:00`))
         }, 1000)
         setDifference(blackFridayTime - currentTime)
         setSeconds(Math.floor(difference / 1000) % 60)
         setMinutes(Math.floor(difference / 1000 / 60) % 60)
         setHours(Math.floor(difference / 1000 / 60 / 60) % 24)
         setDays(Math.floor(difference / 1000 / 60 / 60 / 24))
-    }, [currentTime],
+    }, [currentTime, setSeconds, difference, blackFridayTime],
     );
 
     return (
@@ -50,19 +50,19 @@ export function Register() {
                 <div className="counter">
                     <div>
                         <p>Days:</p>
-                        <span>{days === 0 ? 'Loading...' : days}</span>
+                        <span>{days === NaN ? 'Loading...' : days}</span>
                     </div>
                     <div>
                         <p>Hours:</p>
-                        <span>{hours === 0 ? 'Loading...' : hours}</span>
+                        <span>{hours === NaN ? 'Loading...' : hours}</span>
                     </div>
                     <div>
                         <p>Minutes:</p>
-                        <span>{minutes === 0 ? 'Loading...' : minutes}</span>
+                        <span>{minutes === NaN ? 'Loading...' : minutes}</span>
                     </div>
                     <div>
                         <p>Seconds:</p>
-                        <span>{seconds === 0 ? 'Loading...' : seconds}</span>
+                        <span>{seconds === NaN ? 'Loading...' : seconds}</span>
                     </div>
                 </div>
                 <main>
@@ -81,9 +81,9 @@ export function Register() {
                             </button>
                         </form>
                         <div>
-                            <a target="_blank" href="https://api.whatsapp.com/send?phone=5521999999999&text=Hello, I wanna know more about discounts."><RiWhatsappLine size={40} /></a>
-                            <a target="_blank" href="https://www.instagram.com/gamaacademy/"><RiInstagramLine size={40} /></a>
-                            <a target="_blank" href="https://twitter.com/vtexonline"><RiTwitterLine size={40} /></a>
+                            <a rel="noreferrer" target="_blank" href="https://api.whatsapp.com/send?phone=5521999999999&text=Hello, I wanna know more about discounts."><RiWhatsappLine size={40} /></a>
+                            <a rel="noreferrer" target="_blank" href="https://www.instagram.com/gamaacademy/"><RiInstagramLine size={40} /></a>
+                            <a rel="noreferrer" target="_blank" href="https://twitter.com/vtexonline"><RiTwitterLine size={40} /></a>
                         </div>
                     </div>
                 </main>
