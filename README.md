@@ -103,7 +103,7 @@ Licensed under MIT [LICENSE](./LICENSE.md).
 
 <hr>
 
-I am available for any clarification. 
+I am available for any clarification. :star_struck:
     
 <img style="border-radius: 30%;" src="https://avatars3.githubusercontent.com/u/59886891?s=460&v=4" width="75px;"/>
 <h3>Caio Lemec<h3>
