@@ -34,20 +34,6 @@ Application created to complete the first challenge in [@Hiring Coders](https://
 
 [@Hiring Coders](https://www.hiringcoders.com.br/)  is a partnership between [@Gama Academy](https://www.gama.academy/) and several companies that seek to capture talent in developers area.
 
-In this application it was possible to deepen knowledge in front-end development, reviewing concepts like: 
-
-- SPA (Single-page Application), 
-- React-Components,
-- React-Props,
-- React-Hooks,
-- React-Context,
-- Immutability,
-- SASS,
-- React-router-dom (Routing),
-- Firebase (Auth),
-- Firebase (Realtime Database),
-- Firebase (Hosting),
-
 <br>
 
 ## :nail_care: Layout
